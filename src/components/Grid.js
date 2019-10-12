@@ -4,6 +4,14 @@ import './Grid.css';
 //import Theme from './contexts/test'
 import {Alert} from 'react-bootstrap'
 
+const addClasses = (arr) => {
+	const initialTime = 480;
+	const currEnd = initialTime;
+	
+	
+}
+
+
 class Day extends React.Component {
 	render() {
 		return (
@@ -16,6 +24,9 @@ class Day extends React.Component {
 					<Alert variant='info'>
 					Mon
 					</Alert>
+					<div className="real-class">
+					blah
+					</div>
 				</div>
 				<div className="Day_box">
 					<Alert variant='info'>

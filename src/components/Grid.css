@@ -12,3 +12,8 @@
 	float: left;
 	border: 1px solid #DDD;	
 }
+
+.real-class {
+	background-color: lightblue;
+	height: 200px;
+}
