@@ -10,20 +10,16 @@ import Layout from './components/layout/Layout';
 
 const App = () => {
   return (
-    <div className="App">
+    <Layout>
       <Switch>
         <Route path="/about">
-          <Layout title="about">
-            <About />
-          </Layout>
+          <About />
         </Route>
         <Route path="/">
-          <Layout title="SIS 2.0">
-            <Index />
-          </Layout>
+          <Index />
         </Route>
       </Switch>
-    </div>
+    </Layout>
   );
 };
 
