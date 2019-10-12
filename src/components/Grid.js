@@ -1,8 +1,8 @@
-import React, {useState, useContext, createContext} from 'react';
+import React, { useState, useContext, createContext } from 'react';
 //import logo from './logo.svg';
 import './Grid.css';
 //import Theme from './contexts/test'
-import {Alert} from 'react-bootstrap'
+import { Alert } from 'react-bootstrap'
 
 class Day extends React.Component {
 	render() {
@@ -14,52 +14,52 @@ class Day extends React.Component {
 				</div>
 				<div className="Day_box">
 					<Alert variant='info'>
-					Mon
+						Mon
 					</Alert>
 				</div>
 				<div className="Day_box">
 					<Alert variant='info'>
-					Tue
+						Tue
 					</Alert>
 				</div>
 				<div className="Day_box">
 					<Alert variant='info'>
-					Wed
+						Wed
 					</Alert>
 				</div>
 				<div className="Day_box">
 					<Alert variant='info'>
-					Thu
+						Thu
 					</Alert>
 				</div>
 				<div className="Day_box">
 					<Alert variant='info'>
-					Fri
+						Fri
 					</Alert>
 				</div>
 			</div>
 		)
 	}
-	
+
 }
 
 
 class Grid extends React.Component {
-	
+
 	render() {
-    return (
-      <div className="game">
-        <div className="game-board">
-          <Day />
-        </div>
-        <div className="game-info">
-          <div>{/* status */}</div>
-          <ol>{/* TODO */}</ol>
-        </div>
-      </div>
-    );
-  }
-	
+		return (
+			<div className="game">
+				<div className="game-board">
+					<Day />
+				</div>
+				<div className="game-info">
+					<div>{/* status */}</div>
+					<ol>{/* TODO */}</ol>
+				</div>
+			</div>
+		);
+	}
+
 }
 
 export default Grid
