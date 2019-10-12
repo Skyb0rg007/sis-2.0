@@ -8,8 +8,13 @@ import { Helmet } from 'react-helmet';
 //   Link
 // } from 'react-router-dom'
 
-import ButtonLabel from './components/ButtonLabel'
-import Grid from './components/Grid'
+import ProfForm from './components/searchpage/professorform';
+import AMvPM from './components/searchpage/amvspm';
+import DistDropdown from './components/searchpage/distdropdown';
+import SubjForm from './components/searchpage/subjsearchbox';
+import WhichCampus from './components/searchpage/whichcampus';
+import DaysofWeek from './components/searchpage/daysofweekform';
+
 
 const App = () => {
   return (
@@ -19,7 +24,12 @@ const App = () => {
         <meta charSet="utf-8" />
       </Helmet>
       <body>
-        <Grid name="Johnny" />
+        <ProfForm />
+        <DaysofWeek />
+        <AMvPM/>
+        <DistDropdown />
+        <SubjForm />
+        <WhichCampus />
       </body>
     </div>
   );
