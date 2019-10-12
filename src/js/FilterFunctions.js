@@ -10,7 +10,8 @@ module.exports = {
 
 
 function clean_empties(catalog) {
-    return catalog.filter(course => (course.sections != undefined))
+    return catalog.filter(course => {
+        return (course.sections[0] != undefined)})
 }
 
 function print_courses(catalog) {
@@ -34,12 +35,13 @@ function print_courses(catalog) {
 
 function blacklist(catalog, prof) {
 
-    var filtered = catalog.map(function (course) 
-        {course.sections[0].filter(function(section)
-             {return section.instructor !== prof})
-        return sections})
-    //console.log(filtered)
-    //print_courses(filtered);
+    var filtered = catalog.map(course => 
+        {for (section of course.sections){
+            section = section.filter(section =>
+                {return section.instructor !== prof})
+        }
+        return course.sections})
+
     return filtered;
 }
 
