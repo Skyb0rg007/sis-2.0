@@ -1,8 +1,12 @@
-import React from 'react';
+import React, {useState, useContext, createContext} from 'react';
 import logo from './logo.svg';
 import './App.css';
+import Theme from './contexts/test'
 
-const App = () => {
+const App = ({props}) => {
+  const [count, setCount] = useState(0);
+  const theme = useContext(Theme); 
+
   return (
     <div className="App">
       <header className="App-header">
@@ -18,6 +22,12 @@ const App = () => {
         >
           Learn React
         </a>
+        <button
+          onClick={() => setCount(count + 1)}
+        >
+          Click Me!
+        </button>
+        Clicks: {count}
       </header>
      </div>
   );
