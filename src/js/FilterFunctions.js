@@ -10,7 +10,7 @@ module.exports = {
 
 
 function clean_empties(catalog) {
-    return catalog.filter(course => course.sections != undefined)
+    return catalog.filter(course => (course.sections != undefined))
 }
 
 function print_courses(catalog) {
@@ -18,7 +18,7 @@ function print_courses(catalog) {
         catalog.map(course => {
             if (Array.isArray(course.sections)) {
                 console.log(course.title)
-                course.sections.map(function (sect) {
+                course.sections[0].map(function (sect) {
                     console.log(sect.instructor);
                     return sect;
                 })
@@ -35,8 +35,9 @@ function print_courses(catalog) {
 function blacklist(catalog, prof) {
 
     var filtered = catalog.map(function (course) 
-        {return course.sections.filter(function(section)
-             {return section.instructor !== prof})})
+        {course.sections[0].filter(function(section)
+             {return section.instructor !== prof})
+        return sections})
     //console.log(filtered)
     //print_courses(filtered);
     return filtered;
@@ -49,7 +50,7 @@ function time_constraint(catalog, start, end){
 
 function elim_days(catalog, bad_days) {
     var filtered = catalog.map(function (course)
-        {return course.sections.filter(function(sect)
+        {return course.sections[0].filter(function(sect)
             {var keep = true;
                 for (day in bad_days){
                     if (sect.days.includes(day)){

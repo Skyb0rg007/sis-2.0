@@ -1,15 +1,43 @@
-{"courses":
-[
-{"title":"Childhood Across Culture","course_num":"AAST-0062","attr":"BFA-Language/Culture|BFA-Social Science|LA-Distribution-Social Sciences|SoE-HASS|SoE-HASS-Social Sciences|World Civilization Requirement","sections":[{"instructor":"Jayanthi Mistry","days":["Mo","We"],"start":"10:30AM","end":"11:45AM"}]},
-{"title":"Special Studies: Racial Politics & Urban Space","course_num":"AAST-0094","attr":"","sections":[{"instructor":"Thomas Abowd","days":["We"],"start":"6:00PM","end":"8:30PM"}]},
-{"title":"Special Studies: Immigration, Race & US Society","course_num":"AAST-0094","attr":"","sections":[{"instructor":"Adrian Cruz","days":["Mo","We"],"start":"9:00AM","end":"10:15AM"}]},
-{"title":"Special Studies: Sociology of Race & Ethnicity","course_num":"AAST-0094","attr":"African Cult/Lang - Diasporas|BFA-Language/Culture|BFA-Social Science|LA-Distribution-Social Sciences|SoE-HASS|SoE-HASS-Social Sciences","sections":[{"instructor":"Daanika Gordon","days":["Tu","Th"],"start":"3:00PM","end":"4:15PM"}]},
-{"title":"Special Studies: Transnational Asian Am Studies","course_num":"AAST-0094","attr":"","sections":[{"instructor":"Stephanie Khoury","days":["Th"],"start":"1:30PM","end":"4:15PM"}]},
-{"title":"Special Topics: American Civil Rights","course_num":"AAST-0194","attr":"BFA-Humanities|BFA-Social Science|LA-Distribution-Humanities|LA-Distribution-Social Sciences|SoE-HASS|SoE-HASS-Humanities|SoE-HASS-Social Sciences","sections":[{"instructor":"Kerri Greenidge","days":["Mo"],"start":"1:30PM","end":"4:00PM"}]},
-{"title":"Special Topics: Family Hists & Amer Culture","course_num":"AAST-0194","attr":"","sections":[{"instructor":"Kendra Field","days":["Mo"],"start":"1:30PM","end":"4:00PM"}]},
-{"title":"Special Topics: Comparative Social Inequality","course_num":"AAST-0194","attr":"","sections":[{"instructor":"Felipe Dias","days":["Tu"],"start":"9:00AM","end":"11:30AM"}]},
-{"title":"Special Topics: Urban Sociology","course_num":"AAST-0194","attr":"","sections":[{"instructor":"Anjuli N Fahlberg","days":["Tu","Th"],"start":"10:30AM","end":"11:45AM"}]},
-{"title":"Capstone Project","course_num":"AAST-0198","attr":"","sections":[{"instructor":"STAFF","days":[],"start":"12:00AM","end":"12:00AM"}]},
-{"title":"Real Seminar","course_num":"ACL-0003","attr":"","sections":[{"instructor":"Carmen Elaine Lowe, Kendra Barber","days":["Mo"],"start":"12:00PM","end":"1:15PM"}]}
-]
+{"courses":[
+    {"course_num":"AAST-0062",
+        "sections":
+        [
+            [
+                {"1": {"startstr":"10:30AM","endint":705,"day":["Mo","We"],"endstr":"11:45AM","startint":630},
+                "secsnum":"01-LEC",
+                "instructor":"Jayanthi Mistry"}
+            ]
+        ],
+        "attr":"BFA-Language/Culture|BFA-Social Science|LA-Distribution-Social Sciences|SoE-HASS|SoE-HASS-Social Sciences|World Civilization Requirement",
+        "title":"Childhood Across Culture"},
+    
+    {"course_num":"AAST-0094",
+        "sections":
+        [
+            [
+                {"1":{"startstr":"6:00PM","endint":1230,"day":["We"],"endstr":"8:30PM","startint":1080},
+                    "secsnum":"01-LEC","instructor":"Thomas Abowd"}
+            ]
+        ],
+        "attr":"",
+        "title":"Special Studies: Racial Politics & Urban Space"},
+                
+    {"course_num":"AAST-0094",
+        "sections":
+        [
+            [
+                {"1":{"startstr":"9:00AM","endint":615,"day":["Mo","We"],"endstr":"10:15AM","startint":540},
+                    "secsnum":"02-LEC","instructor":"Adrian Cruz"}
+            ]
+        ],
+        "attr":"",
+        "title":"Special Studies: Immigration, Race & US Society"},
+        
+    {"course_num":"AAST-0094",
+        "sections":[[
+            {"1":{"startstr":"3:00PM","endint":975,"day":["Tu","Th"],"endstr":"4:15PM","startint":900},
+            "secsnum":"03-LEC","instructor":"Daanika Gordon"}]],
+            "attr":"African Cult/Lang - Diasporas|BFA-Language/Culture|BFA-Social Science|LA-Distribution-Social Sciences|SoE-HASS|SoE-HASS-Social Sciences",
+            "title":"Special Studies: Sociology of Race & Ethnicity"}
+    ]
 }
