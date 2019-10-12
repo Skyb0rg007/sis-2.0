@@ -20,6 +20,6 @@ const LeftView = (props) => {
             <a href="#">Item3</a>
         </div>
     )
-}
+};
 
 export default LeftView;

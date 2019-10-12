@@ -2,7 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { Navbar, Nav, NavDropdown } from 'react-bootstrap';
 
-import Grid from '../Grid'
+import Grid from '../calendar/Grid'
 import LeftView from './LeftView'
 
 const MainView = (props) => {

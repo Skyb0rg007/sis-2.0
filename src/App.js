@@ -1,16 +1,12 @@
 import React from 'react';
-import { Helmet } from 'react-helmet';
 import {
   Switch,
-  Route,
-  Link
-} from 'react-router-dom'
+  Route
+} from 'react-router-dom';
 
-import MainView from './components/mainview/MainView'
-import About from './pages/about'
-import Index from './pages/index'
-import Layout from './components/Layout';
-
+import About from './pages/about';
+import Index from './pages/index';
+import Layout from './components/layout/Layout';
 
 const App = () => {
   return (
