@@ -1,6 +1,6 @@
 import json
 
-with open('data.json','r+') as f:
+with open('data.json','r+', encoding="utf8") as f:
 	data = json.load(f)
 
 reformatted = {}
@@ -13,6 +13,7 @@ for classes in data['searchResults']:
 		holder = []
 		for components in sections['components']:
 			secs = {}
+			class_['attr'] = components['class_attr']
 			for locations in components['locations']:
 				secs['instructor'] = locations['instructor']
 
@@ -27,4 +28,8 @@ for classes in data['searchResults']:
 	class_num = class_num + 1
 
 reformatted = json.dumps(reformatted)
-print(reformatted)
+
+output = open("data2.json", "w+")
+output.write(reformatted)
+
+#print(reformatted)
