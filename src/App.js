@@ -7,23 +7,20 @@ import {
 import About from './pages/about';
 import Index from './pages/index';
 import Layout from './components/layout/Layout';
+import Grid from './components/calendar/Grid';
 
 const App = () => {
   return (
-    <div className="App">
+    <Layout>
       <Switch>
         <Route path="/about">
-          <Layout title="about">
-            <About />
-          </Layout>
+          <About />
         </Route>
         <Route path="/">
-          <Layout title="SIS 2.0">
-            <Index />
-          </Layout>
+          <Index />
         </Route>
       </Switch>
-    </div>
+    </Layout>
   );
 };
 

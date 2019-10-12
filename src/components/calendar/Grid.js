@@ -3,6 +3,7 @@ import React, { useState, useContext, createContext } from 'react';
 import './Grid.css';
 //import Theme from './contexts/test'
 import { Alert } from 'react-bootstrap'
+import addClasses from './Grid_functions.js'
 
 
 
@@ -19,7 +20,7 @@ class Day extends React.Component {
 						Mon
 					</Alert>
 					<div className="real-class">
-					blah
+						<ClassDiv />
 					</div>
 				</div>
 				<div className="Day_box">
@@ -47,6 +48,53 @@ class Day extends React.Component {
 	}
 
 }
+
+class Blah extends React.Component {	
+	render() {
+		const type = this.props.value.name;
+		if (type === null) {
+			return (
+				<div className="onCalendar" style={{backgroundColor: "#DDDDDD", height: this.props.value.height}}>
+					{this.props.value.name}
+				</div>
+			);
+		} else {
+			return (
+				<div className="onCalendar" style={{backgroundColor: "#004488", height: this.props.value.height}}>
+					{this.props.value.name}
+				</div>
+			);
+		}
+	}
+}
+
+
+class ClassDiv extends React.Component {
+	
+	renderBlah(i) {
+		return <Blah value={i} />;
+	}
+	createDay = () => {
+		const classes = [{name: "Math-145", startTime: 485, endTime: 680}, {name: "Comp-170", startTime: 900, endTime: 1260}];
+		var divheights = addClasses(classes);
+		console.log(divheights);
+		const daysched = [];
+		for (const i in divheights) {
+			daysched.push(this.renderBlah(divheights[i]));
+		}
+		return daysched;
+	}
+	render() {
+		return (
+			<div className="fullDay">
+			
+			{this.createDay()}
+			</div>
+		);
+	}
+	
+}
+
 
 
 class Grid extends React.Component {

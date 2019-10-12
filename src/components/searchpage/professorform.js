@@ -12,7 +12,7 @@ const ProfForm = (props) => {
         <Form>
         {['checkbox'].map(type => (
             <div key={`inline-${type}`} className="mb-3">
-            <Form.Control inline type = "name" placeholder = "Type a Professor" />
+            <Form.Control inline placeholder = "Type a Professor" style={{width: 500}}/>
             <Form.Check inline label="Include" type={type} id={`inline-${type}-1`} />
             <Form.Check inline label="Exclude" type={type} id={`inline-${type}-2`} />
 
