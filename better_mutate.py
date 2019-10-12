@@ -29,7 +29,7 @@ for classes in data['searchResults']:
 
 reformatted = json.dumps(reformatted)
 
-output = open("data2.json", "w+")
+output = open("data3.json", "w+")
 output.write(reformatted)
 
 #print(reformatted)

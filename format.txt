@@ -1,32 +1,11 @@
-
-everything:
-[
-  fullCourse:
-  {
-    courseNum:   String,
-    courseTitle: String,
-
-    sections:
-    [
-      {
-        attr:       String,
-      }
-      {
-        course:     fullCourse,
-        instructor: String,
-        type:       String,
-        schedules:
-        {
-          day1: {
-            start:    Int,
-            end:      Int
-          }
-          day2: {
-            start:    Int,
-            end:      Int
-          } ...
-        }  
-      }
-    ]
-  }
+{"courses": [ 
+  {"title":"Childhood Across Culture",
+  "course_num":"AAST-0062",
+  "attr":"BFA-Language/Culture|BFA-Social Science|LA-Distribution-Social Sciences|SoE-HASS|SoE-HASS-Social Sciences|World Civilization Requirement",
+  "sections":[
+    {"instructor":"Jayanthi Mistry","days":["Mo","We"],"start":"10:30AM","end":"11:45AM"}
+  ]},
+...
 ]
+}
+
