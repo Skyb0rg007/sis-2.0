@@ -2,12 +2,21 @@
 
 
 
+// takes the big data object and a list of functions
+export function apply_filters(dataObj, functions) {
+    var courses = Object.values(dataObj)
+    
+    for (var fun of functions){
+        courses = fun(courses)
+    }
+
+}
 
 
-export function blacklist(data, prof) {
-    var courses = Object.values(data)
+export function blacklist(catalog, prof) {
+    
 
-    filtered = courses.map(function (course) 
+    filtered = catalog.map(function (course) 
         {course.sections.filter(function(section)
             {section.instructor != prof})})
     
