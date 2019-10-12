@@ -14,7 +14,6 @@ export function apply_filters(dataObj, functions) {
 
 
 export function blacklist(catalog, prof) {
-    
 
     filtered = catalog.map(function (course) 
         {course.sections.filter(function(section)

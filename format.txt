@@ -9,6 +9,9 @@ everything:
     sections:
     [
       {
+        attr:       String,
+      }
+      {
         course:     fullCourse,
         instructor: String,
         type:       String,
