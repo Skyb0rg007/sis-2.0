@@ -4,6 +4,7 @@
   "private": true,
   "dependencies": {
     "bootstrap": "^4.3.1",
+    "grid": "^3.3.7",
     "popper.js": "^1.15.0",
     "react": "^16.10.2",
     "react-available-times": "^1.2.2",
