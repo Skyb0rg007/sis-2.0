@@ -22,6 +22,7 @@ function print_courses(catalog) {
                 console.log(course.title)
                 course.sections[0].map(function (sect) {
                     console.log(sect.instructor);
+                    console.log()
                     return sect;
                 })
             }
@@ -50,14 +51,22 @@ function simplify(catalog) {
 
 function blacklist(catalog, prof) {
 
-    var filtered = catalog.map(course => 
-        {for (section of course.sections){
-            section = section.filter(section =>
-                {return section.instructor !== prof})
-        }
-        return course.sections})
+    // var filtered = catalog.map(course => 
+    //     {for (section of course.sections){
+    //         section = section.filter(sect =>
+    //             {return sect.instructor !== prof})
+    //     }
+    //     return course.sections})
+
+    // return filtered;
+
+    var filtered = catalog.filter(course =>
+        course.sections[0][0].instructor != prof)
 
     return filtered;
+
+
+
 }
 
 
