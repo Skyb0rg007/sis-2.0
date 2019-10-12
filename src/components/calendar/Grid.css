@@ -1,5 +1,5 @@
 .Day_box {
-  height: 700px;
+  height: 735px;
   width: 19%;
   border: 1px solid #AAA;
   float: left;
@@ -7,7 +7,7 @@
 }
 
 .Times {
-	Height: 700px;
+	Height: 735px;
 	width: 4%;
 	float: left;
 	border: 1px solid #DDD;	
@@ -16,4 +16,11 @@
 .real-class {
 	background-color: lightblue;
 	height: 200px;
+}
+
+.onCalendar {
+	border-radius: 5px;
+}
+.fullDay {
+	background-color: #DDDDDD;
 }

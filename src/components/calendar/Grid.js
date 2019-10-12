@@ -54,13 +54,13 @@ class Blah extends React.Component {
 		const type = this.props.value.name;
 		if (type === null) {
 			return (
-				<div style={{backgroundColor: "#DDDDDD", height: this.props.value.height}}>
+				<div className="onCalendar" style={{backgroundColor: "#DDDDDD", height: this.props.value.height}}>
 					{this.props.value.name}
 				</div>
 			);
 		} else {
 			return (
-				<div style={{backgroundColor: "#226688", height: this.props.value.height}}>
+				<div className="onCalendar" style={{backgroundColor: "#004488", height: this.props.value.height}}>
 					{this.props.value.name}
 				</div>
 			);
@@ -86,7 +86,7 @@ class ClassDiv extends React.Component {
 	}
 	render() {
 		return (
-			<div>
+			<div className="fullDay">
 			
 			{this.createDay()}
 			</div>
