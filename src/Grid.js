@@ -2,25 +2,40 @@ import React, {useState, useContext, createContext} from 'react';
 //import logo from './logo.svg';
 import './Grid.css';
 //import Theme from './contexts/test'
+import {Alert} from 'react-bootstrap'
 
 class Day extends React.Component {
 	render() {
 		return (
 			<div className="header">
-				<div className="Day_box">
-				Mon
+				<div className="Times">
+					<Alert variant='light'>
+					</Alert>
 				</div>
 				<div className="Day_box">
-				Tue
+					<Alert variant='info'>
+					Mon
+					</Alert>
 				</div>
 				<div className="Day_box">
-				Wed
+					<Alert variant='info'>
+					Tue
+					</Alert>
 				</div>
 				<div className="Day_box">
-				Thu
+					<Alert variant='info'>
+					Wed
+					</Alert>
 				</div>
 				<div className="Day_box">
-				Fri
+					<Alert variant='info'>
+					Thu
+					</Alert>
+				</div>
+				<div className="Day_box">
+					<Alert variant='info'>
+					Fri
+					</Alert>
 				</div>
 			</div>
 		)
