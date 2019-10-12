@@ -7,12 +7,13 @@ function test () {
     var filters = require('./FilterFunctions.js')
 
     var courses = cat.courses;
-    //var updated = funcs.blacklist(courses, "Kendra Field");
 
-    let updated = filters.elim_days(courses, "Mo")
-    updated = filters.clean_empties(updated)
+    let  updated = filters.blacklist(courses, "Jayanthi Mistry");
 
-    console.log(updated)
+    //let updated = filters.elim_days(courses, "Mo")
+    //updated = filters.clean_empties(updated)
+
+    filters.print_courses(courses)
     //filters.print_courses(updated);
 
 
