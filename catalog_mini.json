@@ -1,43 +1,95 @@
-{"courses":[
-    {"course_num":"AAST-0062",
-        "sections":
-        [
-            [
-                {"1": {"startstr":"10:30AM","endint":705,"day":["Mo","We"],"endstr":"11:45AM","startint":630},
-                "secsnum":"01-LEC",
-                "instructor":"Jayanthi Mistry"}
-            ]
-        ],
-        "attr":"BFA-Language/Culture|BFA-Social Science|LA-Distribution-Social Sciences|SoE-HASS|SoE-HASS-Social Sciences|World Civilization Requirement",
-        "title":"Childhood Across Culture"},
-    
-    {"course_num":"AAST-0094",
-        "sections":
-        [
-            [
-                {"1":{"startstr":"6:00PM","endint":1230,"day":["We"],"endstr":"8:30PM","startint":1080},
-                    "secsnum":"01-LEC","instructor":"Thomas Abowd"}
-            ]
-        ],
-        "attr":"",
-        "title":"Special Studies: Racial Politics & Urban Space"},
-                
-    {"course_num":"AAST-0094",
-        "sections":
-        [
-            [
-                {"1":{"startstr":"9:00AM","endint":615,"day":["Mo","We"],"endstr":"10:15AM","startint":540},
-                    "secsnum":"02-LEC","instructor":"Adrian Cruz"}
-            ]
-        ],
-        "attr":"",
-        "title":"Special Studies: Immigration, Race & US Society"},
-        
-    {"course_num":"AAST-0094",
-        "sections":[[
-            {"1":{"startstr":"3:00PM","endint":975,"day":["Tu","Th"],"endstr":"4:15PM","startint":900},
-            "secsnum":"03-LEC","instructor":"Daanika Gordon"}]],
-            "attr":"African Cult/Lang - Diasporas|BFA-Language/Culture|BFA-Social Science|LA-Distribution-Social Sciences|SoE-HASS|SoE-HASS-Social Sciences",
-            "title":"Special Studies: Sociology of Race & Ethnicity"}
+{
+    "courses": [
+        {
+            "course_num": "AAST-0062",
+            "sections": [
+                [
+                    {
+                        "1": {
+                            "startstr": "10:30AM",
+                            "endint": 705,
+                            "day": [
+                                "Mo",
+                                "We"
+                            ],
+                            "endstr": "11:45AM",
+                            "startint": 630
+                        },
+                        "secsnum": "01-LEC",
+                        "instructor": "Jayanthi Mistry"
+                    }
+                ]
+            ],
+            "attr": "BFA-Language/Culture|BFA-Social Science|LA-Distribution-Social Sciences|SoE-HASS|SoE-HASS-Social Sciences|World Civilization Requirement",
+            "title": "Childhood Across Culture"
+        },
+        {
+            "course_num": "AAST-0094",
+            "sections": [
+                [
+                    {
+                        "1": {
+                            "startstr": "6:00PM",
+                            "endint": 1230,
+                            "day": [
+                                "We"
+                            ],
+                            "endstr": "8:30PM",
+                            "startint": 1080
+                        },
+                        "secsnum": "01-LEC",
+                        "instructor": "Thomas Abowd"
+                    }
+                ]
+            ],
+            "attr": "",
+            "title": "Special Studies: Racial Politics & Urban Space"
+        },
+        {
+            "course_num": "AAST-0094",
+            "sections": [
+                [
+                    {
+                        "1": {
+                            "startstr": "9:00AM",
+                            "endint": 615,
+                            "day": [
+                                "Mo",
+                                "We"
+                            ],
+                            "endstr": "10:15AM",
+                            "startint": 540
+                        },
+                        "secsnum": "02-LEC",
+                        "instructor": "Adrian Cruz"
+                    }
+                ]
+            ],
+            "attr": "",
+            "title": "Special Studies: Immigration, Race & US Society"
+        },
+        {
+            "course_num": "AAST-0094",
+            "sections": [
+                [
+                    {
+                        "1": {
+                            "startstr": "3:00PM",
+                            "endint": 975,
+                            "day": [
+                                "Tu",
+                                "Th"
+                            ],
+                            "endstr": "4:15PM",
+                            "startint": 900
+                        },
+                        "secsnum": "03-LEC",
+                        "instructor": "Daanika Gordon"
+                    }
+                ]
+            ],
+            "attr": "African Cult/Lang - Diasporas|BFA-Language/Culture|BFA-Social Science|LA-Distribution-Social Sciences|SoE-HASS|SoE-HASS-Social Sciences",
+            "title": "Special Studies: Sociology of Race & Ethnicity"
+        }
     ]
 }
