@@ -4,12 +4,6 @@ import './Grid.css';
 //import Theme from './contexts/test'
 import { Alert } from 'react-bootstrap'
 
-const addClasses = (arr) => {
-	const initialTime = 480;
-	const currEnd = initialTime;
-	
-	
-}
 
 
 class Day extends React.Component {
