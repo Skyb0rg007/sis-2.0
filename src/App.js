@@ -7,6 +7,7 @@ import {
 import About from './pages/about';
 import Index from './pages/index';
 import Layout from './components/layout/Layout';
+import Grid from './components/calendar/Grid';
 
 const App = () => {
   return (
