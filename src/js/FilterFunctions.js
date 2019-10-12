@@ -5,7 +5,8 @@ module.exports = {
     "elim_days": elim_days,
     "time_constraint": time_constraint,
     "clean_empties": clean_empties,
-    "print_courses": print_courses
+    "print_courses": print_courses,
+    "simplify": simplify
 }
 
 
@@ -30,6 +31,20 @@ function print_courses(catalog) {
     else{
         console.log("bruh")
     }
+}
+
+function simplify(catalog) {
+
+    var new_cat = catalog.map(course => {
+        if (Array.isArray(course.sections)) {
+            new_elem = {"course": course.title,
+                        "instructor": course.sections[0].instructor}
+            return new_elem;
+        }
+        else {
+            return {};
+        }})
+    return new_cat
 }
 
 
