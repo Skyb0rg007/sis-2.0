@@ -13,6 +13,7 @@ for classes in data['searchResults']:
 		holder = []
 		for components in sections['components']:
 			secs = {}
+			class_['attr'] = components['class_attr']
 			for locations in components['locations']:
 				secs['instructor'] = locations['instructor']
 
