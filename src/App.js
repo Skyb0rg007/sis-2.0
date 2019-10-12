@@ -1,5 +1,6 @@
 import React from 'react';
 import { Helmet } from 'react-helmet';
+
 // import {
 //   BrowserRouter as Router,
 //   Switch,
@@ -8,6 +9,9 @@ import { Helmet } from 'react-helmet';
 // } from 'react-router-dom'
 
 import ButtonLabel from './components/ButtonLabel'
+import SubjForm from './components/searchpage/subjsearchbox';
+import WhichCampus from './components/searchpage/whichcampus';
+import ProfForm from './components/searchpage/professorform';
 
 const App = () => {
   return (
@@ -28,6 +32,9 @@ const App = () => {
       </Helmet>
       <body>
         <ButtonLabel name="Johnny" />
+        <SubjForm/>
+        <WhichCampus/>
+        <ProfForm />
       </body>
     </div>
   );

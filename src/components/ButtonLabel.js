@@ -1,11 +1,11 @@
 import React from 'react';
-import { Alert } from 'react-bootstrap';
+import { Button } from 'react-bootstrap';
 
 const ButtonLabel = (props) => {
     return (
-        <Alert variant="primary">
+        <Button variant="primary">
             { props.name } was clicked 0 times
-        </Alert>
+        </Button>
     )
 }
 
