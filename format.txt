@@ -3,7 +3,10 @@
   "course_num":"AAST-0062",
   "attr":"BFA-Language/Culture|BFA-Social Science|LA-Distribution-Social Sciences|SoE-HASS|SoE-HASS-Social Sciences|World Civilization Requirement",
   "sections":[
-    {"instructor":"Jayanthi Mistry","days":["Mo","We"],"start":"10:30AM","end":"11:45AM"}
+    {"instructor":"Jayanthi Mistry",
+    "days":["Mo","We"],
+    "start":"10:30AM",
+    "end":"11:45AM"}
   ]},
 ...
 ]
