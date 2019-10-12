@@ -1,35 +1,35 @@
-import React, {useState, useContext, createContext} from 'react';
-import logo from './logo.svg';
-import './App.css';
-import Theme from './contexts/test'
+import React from 'react';
+import { Helmet } from 'react-helmet';
+// import {
+//   BrowserRouter as Router,
+//   Switch,
+//   Route,
+//   Link
+// } from 'react-router-dom'
 
-const App = ({props}) => {
-  const [count, setCount] = useState(0);
-  const theme = useContext(Theme); 
+import ButtonLabel from './components/ButtonLabel'
 
+const App = () => {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-        <button
-          onClick={() => setCount(count + 1)}
-        >
-          Click Me!
-        </button>
-        Clicks: {count}
-      </header>
-     </div>
+      <Helmet>
+        <title>SIS 2.0</title>
+        <meta charSet="utf-8" />
+        <link
+          rel="stylesheet"
+          href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+          integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+          crossorigin="anonymous"
+        />
+        <script
+          src="https://unpkg.com/react-dom/umd/react-dom.production.min.js"
+          crossorigin
+        />
+      </Helmet>
+      <body>
+        <ButtonLabel name="Johnny" />
+      </body>
+    </div>
   );
 }
 
