@@ -1,5 +1,7 @@
 //Turns the initial JSON into a better json
 
+module.exports = mutate;
+
 function mutate (jsonObj) {
         console.log(jsonObj);
   var total = [];
