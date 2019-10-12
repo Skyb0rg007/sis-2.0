@@ -1,14 +1,36 @@
-{"courses": [ 
-  {"title":"Childhood Across Culture",
-  "course_num":"AAST-0062",
-  "attr":"BFA-Language/Culture|BFA-Social Science|LA-Distribution-Social Sciences|SoE-HASS|SoE-HASS-Social Sciences|World Civilization Requirement",
-  "sections":[
-    {"instructor":"Jayanthi Mistry",
-    "days":["Mo","We"],
-    "start":"10:30AM",
-    "end":"11:45AM"}
-  ]},
-...
-]
-}
+GENERAL
+{
+  "<entry number>":{
+    "course_num": "<course number>",
+    "sections":
+      [
+        [
+          {"<meeting number>": {"startstr": "10:30AM", "endint": 705, "day": ["Mo", "We"], "endstr": "11:45AM", "startint": 630},
+          "secsnum": "<component number>", "<additional meeting number>": {<meeting information>}, instructor": "Jayanthi Mistry"} 
+        ]
+      ],
+    "attr": "<attributes>",
+    "title": "<title>"}, 
 
+
+EXAMPLE
+
+"1116": {"course_num": "FR-0004", "sections": [
+    [
+      {"2": {"startstr": "8:30AM", "endint": 560, "day": ["Mo", "We"], "endstr": "9:20AM", "startint": 510}, "secsnum": "A-LEC", "3": {"startstr": "9:30AM", "endint": 620, "day": ["Th"], "endstr": "10:20AM", "startint": 570}, "instructor": "David F Pauling"},
+      {"1": {"startstr": "9:30AM", "endint": 620, "day": ["Mo"], "endstr": "10:20AM", "startint": 570}, "secsnum": "B-LEC", "2": {"startstr": "10:30AM", "endint": 680, "day": ["Tu", "Th"], "endstr": "11:20AM", "startint": 630}, "instructor": "David F Pauling"},
+      {"1": {"startstr": "10:30AM", "endint": 680, "day": ["Mo", "We", "Fr"], "endstr": "11:20AM", "startint": 630}, "secsnum": "C-LEC", "instructor": "Anne Taieb"},
+      {"1": {"startstr": "1:30PM", "endint": 860, "day": ["Tu", "Th"], "endstr": "2:20PM", "startint": 810}, "secsnum": "D-LEC", "2": {"startstr": "2:30PM", "endint": 920, "day": ["Fr"], "endstr": "3:20PM", "startint": 870}, "instructor": "Viola Gertrude Thomas"}
+    ],
+    [
+      {"2": {"startstr": "12:00PM", "endint": 760, "day": ["Mo"], "endstr": "12:40PM", "startint": 720}, "secsnum": "RA-RCT", "instructor": "Anne Taieb"},
+      {"2": {"startstr": "12:45PM", "endint": 805, "day": ["Mo"], "endstr": "1:25PM", "startint": 765}, "secsnum": "RB-RCT", "instructor": "Anne Taieb"},
+      {"2": {"startstr": "6:00PM", "endint": 1120, "day": ["Mo"], "endstr": "6:40PM", "startint": 1080}, "secsnum": "RC-RCT", "instructor": "Anne Taieb"},
+      {"2": {"startstr": "6:45PM", "endint": 1165, "day": ["Tu"], "endstr": "7:25PM", "startint": 1125}, "secsnum": "RD-RCT", "instructor": "Anne Taieb"},
+      {"2": {"startstr": "12:00PM", "endint": 760, "day": ["We"], "endstr": "12:40PM", "startint": 720}, "secsnum": "RE-RCT", "instructor": "Anne Taieb"},
+      {"2": {"startstr": "12:45PM", "endint": 805, "day": ["We"], "endstr": "1:25PM", "startint": 765}, "secsnum": "RF-RCT", "instructor": "Anne Taieb"},
+      {"2": {"startstr": "4:30PM", "endint": 1030, "day": ["We"], "endstr": "5:10PM", "startint": 990}, "secsnum": "RG-RCT", "instructor": "Anne Taieb"},
+      {"1": {"startstr": "12:00PM", "endint": 760, "day": ["We"], "endstr": "12:40PM", "startint": 720}, "secsnum": "RH-RCT", "instructor": "Anne Taieb"}
+    ]
+  ],
+    "attr": "BFA-Language/Culture|Foreign Language Level 3+|French Culture/Language|SoE-HASS|SoE-HASS-Humanities", "title": "Intermed French II"},
