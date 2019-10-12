@@ -1,0 +1,7 @@
+.Day_box {
+  height: 700px;
+  width: 250px;
+  border: 1px solid #AAA;
+  float: left;
+  text-align: center;
+}
