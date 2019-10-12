@@ -1,18 +1,34 @@
 
 
 module.exports = {
-    "blacklist": blacklist
+    "blacklist": blacklist,
+    "elim_days": elim_days,
+    "time_constraint": time_constraint,
+    "clean_empties": clean_empties,
+    "print_courses": print_courses
 }
 
-// takes the big data object and a list of functions
-// not sure how to handle parameters
-function apply_filters(dataObj, functions) {
-    var courses = Object.values(dataObj)
-    
-    for (var fun of functions){
-        courses = fun(courses)
-    }
 
+function clean_empties(catalog) {
+    return catalog.filter(course => course.sections != undefined)
+}
+
+function print_courses(catalog) {
+    if (Array.isArray(catalog)) {
+        catalog.map(course => {
+            if (Array.isArray(course.sections)) {
+                console.log(course.title)
+                course.sections.map(function (sect) {
+                    console.log(sect.instructor);
+                    return sect;
+                })
+            }
+        return course; 
+        })
+    }
+    else{
+        console.log("bruh")
+    }
 }
 
 
@@ -21,11 +37,28 @@ function blacklist(catalog, prof) {
     var filtered = catalog.map(function (course) 
         {return course.sections.filter(function(section)
              {return section.instructor !== prof})})
-    
-    console.log(filtered)
-    return filtered
+    //console.log(filtered)
+    //print_courses(filtered);
+    return filtered;
 }
 
 
+function time_constraint(catalog, start, end){
+    return catalog
+}
+
+function elim_days(catalog, bad_days) {
+    var filtered = catalog.map(function (course)
+        {return course.sections.filter(function(sect)
+            {var keep = true;
+                for (day in bad_days){
+                    if (sect.days.includes(day)){
+                        keep = false;
+                    }
+                }
+                return keep})})
+    print_courses(filtered);
+    return filtered;
+}
 
 
