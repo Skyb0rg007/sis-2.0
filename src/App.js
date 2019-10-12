@@ -11,6 +11,7 @@ import About from './pages/about'
 import Index from './pages/index'
 import Layout from './components/Layout';
 
+
 const App = () => {
   return (
     <div className="App">
